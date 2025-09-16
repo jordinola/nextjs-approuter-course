@@ -7,10 +7,10 @@ import {
   ExclamationCircleIcon,
   KeyIcon
 } from '@heroicons/react/24/outline';
-import { Button } from './button';
 import { useSearchParams } from 'next/navigation';
 import { useActionState } from 'react';
 import { authenticate } from '../lib/action';
+import { Button } from './button';
 
 export default function LoginForm() {
   const searchParams = useSearchParams();
@@ -38,6 +38,7 @@ export default function LoginForm() {
                 id="email"
                 type="email"
                 name="email"
+                defaultValue="user@nextmail.com"
                 placeholder="Enter your email address"
                 required
               />
