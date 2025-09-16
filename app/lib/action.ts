@@ -65,7 +65,6 @@ export const updateInvoice = async (id: string, formData: FormData) => {
 }
 
 export const deleteInvoice = async (id: string) => {
-    throw new Error('Delete invoice not implemented yet');
     await sql`
         DELETE FROM invoices
         WHERE id = ${id};
